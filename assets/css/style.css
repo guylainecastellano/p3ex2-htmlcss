@@ -1,29 +1,32 @@
 header{
-  background-image: url(../image/header.jpg);
-  background-size: cover;
-  height: 1300px;
-  display: flex;
-  justify-content: center;
-  align-items: center
+  background-image: url(../image/header.jpg); /* définition taile image */
+  background-size: cover; /* définition de la hauteur du header */
+  height: 1300px; /*élément parent comme container flexible et position du h1 */
+  display: flex; /* définir alignmt horiztal du container enfts */
+  justify-content: center; /*definir alignmt vertical */
+  align-items: center /* définition police du texte h1 et sa taille */
   }
 h1{
   font-family: 'Playfair display', serif;
   font-size: 20em;
 }
-#barredenavigation li {
-  display:inline; /*aligner les onglets */
-  list-style: none; /*retrait des puces */
-  text-align: center;
-  margin: 0 500px; /*espacement des onglets */
+ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /*enléve les puces */
+  list-style-type: none; /* définit la hauteur de la liste mm hauteur que nav */
+  height: 50px;
 }
-#barredenavigation a{
-  font-size: 70px;
-  font-weight: normal;
-  color: #ffffff
+li > a{
+  color: #000000;
+  font-size: 3em; /* enleve le trait de soulignmt */
+  text-decoration: none;
 }
-#barredenavigation button{
-  background-color: #4eabf5 /*fond bleu */
+li > a:hover{
+  color: #ffffff; /*change de couleur qd on passe dessus */
 }
-button, label, input{
-  font-size: 70px
-  }
+nav{
+  background-color: #84b9bd;
+  height: 50px;
+  margin: -20px;
+}

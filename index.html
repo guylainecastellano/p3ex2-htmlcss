@@ -12,15 +12,21 @@
   <header>
     <h1>Voyage & Co</h1>
   </header>
-  <nav><ul id="barredenavigation">
-    <li><button><a href="#">Accueil</a></button></li>
-    <li><button><a href="#">Destinations</a></button></li>
-    <li><button><a href="#">Réservations</a></button></li>
-    <li><button><a href="#">Contact</a></button></li>
-  </ul></nav>
-  <label for="site-search">Champ de recherche:</label>
-  <input type="search" id="site-search" name="q"
-  aria-label="Search through site content">
-  <button>Rechercher</button>
+  <nav>
+    <ul>
+      <li><a href="#" title="lien vers la page d'accueil">Accueil</a></li> <!-- title non obligatoire dans barre de navigation -->
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Réservations</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>
+        <form action="#" method ="post">
+          <label>
+            <input type="search" id="searchBar" name="searchBar" placeholder="Rechercher..."/>
+          </label>
+            <input type="submit" id="searchButton" name="searchButton" value="Rechercher"/>
+        </form>
+      </li>
+    </ul>
+  </nav>
 </body>
 </html>
