@@ -5,8 +5,25 @@ header{
   display: flex;
   justify-content: center;
   align-items: center
-}
+  }
 h1{
-  font: arial,sans-serif;
+  font-family: 'Playfair display', serif;
   font-size: 20em;
 }
+#barredenavigation li {
+  display:inline; /*aligner les onglets */
+  list-style: none; /*retrait des puces */
+  text-align: center;
+  margin: 0 500px; /*espacement des onglets */
+}
+#barredenavigation a{
+  font-size: 70px;
+  font-weight: normal;
+  color: #ffffff
+}
+#barredenavigation button{
+  background-color: #4eabf5 /*fond bleu */
+}
+button, label, input{
+  font-size: 70px
+  }
